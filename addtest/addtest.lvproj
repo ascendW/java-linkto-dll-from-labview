@@ -1,0 +1,90 @@
+﻿<?xml version='1.0' encoding='UTF-8'?>
+<Project Type="Project" LVVersion="18008000">
+	<Item Name="我的电脑" Type="My Computer">
+		<Property Name="server.app.propertiesEnabled" Type="Bool">true</Property>
+		<Property Name="server.control.propertiesEnabled" Type="Bool">true</Property>
+		<Property Name="server.tcp.enabled" Type="Bool">false</Property>
+		<Property Name="server.tcp.port" Type="Int">0</Property>
+		<Property Name="server.tcp.serviceName" Type="Str">我的电脑/VI服务器</Property>
+		<Property Name="server.tcp.serviceName.default" Type="Str">我的电脑/VI服务器</Property>
+		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
+		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
+		<Property Name="specify.custom.address" Type="Bool">false</Property>
+		<Item Name="addtest.vi" Type="VI" URL="../addtest.vi"/>
+		<Item Name="依赖关系" Type="Dependencies"/>
+		<Item Name="程序生成规范" Type="Build">
+			<Item Name="myadd" Type="DLL">
+				<Property Name="App_copyErrors" Type="Bool">true</Property>
+				<Property Name="App_INI_aliasGUID" Type="Str">{ACB561F9-3A9C-4D18-BD14-0FF75C46DB1E}</Property>
+				<Property Name="App_INI_GUID" Type="Str">{C70D35FE-D9FE-4D5C-A765-42C00C54CB54}</Property>
+				<Property Name="App_serverConfig.httpPort" Type="Int">8002</Property>
+				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
+				<Property Name="Bld_buildCacheID" Type="Str">{560C4A99-454B-4381-ADD8-083E3C45335F}</Property>
+				<Property Name="Bld_buildSpecName" Type="Str">myadd</Property>
+				<Property Name="Bld_defaultLanguage" Type="Str">ChineseS</Property>
+				<Property Name="Bld_excludeInlineSubVIs" Type="Bool">true</Property>
+				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
+				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
+				<Property Name="Bld_localDestDir" Type="Path">../myDLL</Property>
+				<Property Name="Bld_localDestDirType" Type="Str">relativeToProject</Property>
+				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
+				<Property Name="Bld_previewCacheID" Type="Str">{738931F3-2989-4926-89D6-D37E7ADD06B2}</Property>
+				<Property Name="Bld_version.build" Type="Int">1</Property>
+				<Property Name="Bld_version.major" Type="Int">1</Property>
+				<Property Name="Destination[0].destName" Type="Str">add.dll</Property>
+				<Property Name="Destination[0].path" Type="Path">../myDLL/add.dll</Property>
+				<Property Name="Destination[0].path.type" Type="Str">relativeToProject</Property>
+				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
+				<Property Name="Destination[0].type" Type="Str">App</Property>
+				<Property Name="Destination[1].destName" Type="Str">支持目录</Property>
+				<Property Name="Destination[1].path" Type="Path">../myDLL/data</Property>
+				<Property Name="Destination[1].path.type" Type="Str">relativeToProject</Property>
+				<Property Name="DestinationCount" Type="Int">2</Property>
+				<Property Name="Dll_compatibilityWith2011" Type="Bool">false</Property>
+				<Property Name="Dll_delayOSMsg" Type="Bool">true</Property>
+				<Property Name="Dll_headerGUID" Type="Str">{F4819F29-7BED-4E2D-90CE-68E93A8A36B1}</Property>
+				<Property Name="Dll_libGUID" Type="Str">{F822C10C-11E4-4A9A-BE37-CB60D8735B63}</Property>
+				<Property Name="Dll_privateExecSys" Type="Bool">true</Property>
+				<Property Name="Source[0].itemID" Type="Str">{5B86A6B5-85E0-4B06-92D0-EC930BD7C8D3}</Property>
+				<Property Name="Source[0].type" Type="Str">Container</Property>
+				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[1].ExportedVI.VIProtoInfo[0]VIProtoDir" Type="Int">1</Property>
+				<Property Name="Source[1].ExportedVI.VIProtoInfo[0]VIProtoInputIdx" Type="Int">-1</Property>
+				<Property Name="Source[1].ExportedVI.VIProtoInfo[0]VIProtoLenInput" Type="Int">-1</Property>
+				<Property Name="Source[1].ExportedVI.VIProtoInfo[0]VIProtoLenOutput" Type="Int">-1</Property>
+				<Property Name="Source[1].ExportedVI.VIProtoInfo[0]VIProtoName" Type="Str">返回值</Property>
+				<Property Name="Source[1].ExportedVI.VIProtoInfo[0]VIProtoOutputIdx" Type="Int">7</Property>
+				<Property Name="Source[1].ExportedVI.VIProtoInfo[0]VIProtoPassBy" Type="Int">1</Property>
+				<Property Name="Source[1].ExportedVI.VIProtoInfo[1]VIProtoDir" Type="Int">0</Property>
+				<Property Name="Source[1].ExportedVI.VIProtoInfo[1]VIProtoInputIdx" Type="Int">6</Property>
+				<Property Name="Source[1].ExportedVI.VIProtoInfo[1]VIProtoLenInput" Type="Int">-1</Property>
+				<Property Name="Source[1].ExportedVI.VIProtoInfo[1]VIProtoLenOutput" Type="Int">-1</Property>
+				<Property Name="Source[1].ExportedVI.VIProtoInfo[1]VIProtoName" Type="Str">b</Property>
+				<Property Name="Source[1].ExportedVI.VIProtoInfo[1]VIProtoOutputIdx" Type="Int">-1</Property>
+				<Property Name="Source[1].ExportedVI.VIProtoInfo[1]VIProtoPassBy" Type="Int">1</Property>
+				<Property Name="Source[1].ExportedVI.VIProtoInfo[2]CallingConv" Type="Int">0</Property>
+				<Property Name="Source[1].ExportedVI.VIProtoInfo[2]Name" Type="Str">Addtest</Property>
+				<Property Name="Source[1].ExportedVI.VIProtoInfo[2]VIProtoDir" Type="Int">0</Property>
+				<Property Name="Source[1].ExportedVI.VIProtoInfo[2]VIProtoInputIdx" Type="Int">4</Property>
+				<Property Name="Source[1].ExportedVI.VIProtoInfo[2]VIProtoLenInput" Type="Int">-1</Property>
+				<Property Name="Source[1].ExportedVI.VIProtoInfo[2]VIProtoLenOutput" Type="Int">-1</Property>
+				<Property Name="Source[1].ExportedVI.VIProtoInfo[2]VIProtoName" Type="Str">a</Property>
+				<Property Name="Source[1].ExportedVI.VIProtoInfo[2]VIProtoOutputIdx" Type="Int">-1</Property>
+				<Property Name="Source[1].ExportedVI.VIProtoInfo[2]VIProtoPassBy" Type="Int">1</Property>
+				<Property Name="Source[1].ExportedVI.VIProtoInfoCPTM" Type="Bin">'!#!!!!!!!5!"!!!!!&gt;!#A!"91!(1!I!!7)!"U!+!!&amp;D!&amp;1!]!!-!!!!!!!!!!!!!1!!!!)!!Q!!!!!!!!!!!A!!?!!!!!!!!!!!!!!!!!!!!!!!!!A!!!!!!!!!#A!!!!U'!!!!!!!!!!!!!!!!!!!!!!!!!!%!"!</Property>
+				<Property Name="Source[1].ExportedVI.VIProtoInfoVIProtoItemCount" Type="Int">3</Property>
+				<Property Name="Source[1].itemID" Type="Ref">/我的电脑/addtest.vi</Property>
+				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
+				<Property Name="Source[1].type" Type="Str">ExportedVI</Property>
+				<Property Name="SourceCount" Type="Int">2</Property>
+				<Property Name="TgtF_fileDescription" Type="Str">myadd</Property>
+				<Property Name="TgtF_internalName" Type="Str">myadd</Property>
+				<Property Name="TgtF_legalCopyright" Type="Str">版权 2021 </Property>
+				<Property Name="TgtF_productName" Type="Str">myadd</Property>
+				<Property Name="TgtF_targetfileGUID" Type="Str">{A12D86A2-E640-4378-A409-DB0E0317DEB5}</Property>
+				<Property Name="TgtF_targetfileName" Type="Str">add.dll</Property>
+				<Property Name="TgtF_versionIndependent" Type="Bool">true</Property>
+			</Item>
+		</Item>
+	</Item>
+</Project>
